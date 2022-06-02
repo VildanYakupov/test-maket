@@ -1,0 +1,22 @@
+* { 
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $font-stack;
+    font-size: $font-size-text;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
