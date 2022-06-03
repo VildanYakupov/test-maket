@@ -2,6 +2,7 @@
   font-family: Gilroy;
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
   src: url("../fonts/Gilroy-medium.woff") format(".woff"), url("../fonts/Gilroy-medium.woff2") format(".woff2");
 }
 
@@ -9,6 +10,7 @@
   font-family: Gilroy;
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url("../fonts/Gilroy-bold.woff") format(".woff"), url("../fonts/Gilroy-bold.woff2") format(".woff2");
 }
 
@@ -363,6 +365,7 @@ template {
 html {
   font-family: "Gilroy", sans-serif;
   font-size: 18px;
+  font-weight: 700;
 }
 
 a {
@@ -379,12 +382,59 @@ img {
   max-width: 100%;
 }
 
-.header {
-  min-height: 87px;
-}
-
-.header__list {
+.wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
+.container {
+  max-width: 960px;
+  padding: 0 20px 0 20px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 87px;
+}
+
+.header__nav {
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid #828282;
+}
+
+.header__list {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header__item {
+  color: #828282;
+  line-height: 122.22222%;
+}
+
+.header__link {
+  color: inherit;
+}
+/*# sourceMappingURL=style.css.map */

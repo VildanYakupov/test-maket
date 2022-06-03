@@ -1,18 +1,30 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    height: 87px;
+
+}
+
 .header {
-    min-height: 87px;
     &__nav {
+        height: 100%;
+        width: 100%;
+        border-bottom: 1px solid $secondary-color;
     }
-    
     &__list {
+        height: 100%;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
     }
     
     &__item {
+        color: $secondary-color;
+        line-height: 22px / $font-size-text * 100%;
     }
     
     &__link {
+        color: inherit;
     }
-}
-
-.header-container {
 }
