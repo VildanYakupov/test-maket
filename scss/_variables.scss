@@ -1,11 +1,23 @@
-$main-bg: #fff;
-$secondary-bg: #f6f6f6;
+//*backgraund-color
+$bg-main: #fff;
+$bg-secondary: #f6f6f6;
+//*color
+$color-main: #070707;
+$color-secondary: #828282;
 
-$main-color: #070707;
-$secondary-color: #828282;
 
-$font-stack: "Gilroy", sans-serif;
+//*font-family
+$fm-stack: "Gilroy", sans-serif;
 
-$font-size-heading: 34px;
-$font-size-text: 18px;
-$font-size-subtext: 14px;
+//*font-size
+$fs-name: 48px;
+$fs-heading: 34px;
+$fs-text: 18px;
+$fs-subtext: 14px;
+$fs-main: 18px;
+$fs-lang:16px;
+
+//*font-weight
+$fw-bold: 700;
+$fw-medium: 500;
+
