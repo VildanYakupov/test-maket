@@ -1,12 +1,23 @@
 .section-about {
+    height: 100vh;
+    background-color: $bg-secondary;
+    &__container {
+        height: 100%;
+        max-width: 485px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     &__title {
-        margin: 0;
     }
 
     &__text {
+        margin-top: 30px;
+        text-align: center;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
     }
-}
-.container {
-}
-.about-container {
 }

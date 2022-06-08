@@ -1,5 +1,5 @@
 .section-profile {
-
+      height: 100vh;
       &__container {
             display: flex;
             flex-direction: column;
@@ -22,7 +22,6 @@
 }
 
 .profile {
-
       &__name {
             flex: 0 0 13%;
             font-size: $fs-name;
@@ -38,23 +37,27 @@
       }
 
       &__lang {
-            flex: 0 0 3%;
-            writing-mode: vertical-lr;
-            transform: rotate(180deg);
+            transform: rotate(-90deg) translate(25px, 22px)
       }
+}
 
+.lang {
+      display: flex;
+      align-items: center;
       &__link {
             font-size:$fs-lang;
             color: $color-secondary;
-            &:first-child {
-                  border-bottom: 1px solid $color-main;
-            }
+            transition: transform $animation ease-out;
             &:hover {
                   color: $color-main;
             }
             &:active {
                   color: $color-main;
+                  transform: translate(1px, 1px);
             }
       }
-}
 
+      &__separator{
+            margin: 0 4px;
+      }
+}
