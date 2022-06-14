@@ -30,12 +30,12 @@
                             </a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">
+                            <a href="#section-portfolio" class="header__link">
                                 Portfolio
                             </a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">
+                            <a href="#contacts" class="header__link">
                                 Contacts
                             </a>
                         </li>
@@ -135,10 +135,21 @@
             <!-- */section-skill -->
             
             <!-- *section-portfolio -->
-            <section class="section-portfolio">
+            <section id="section-portfolio" class="section-portfolio">
                 <div class="container section-portfolio__container">
                     <h2 class="section-title section-portfolio__title">Portfolio</h2>
-                    <ul class="section-portfolio__list">
+                    <div class="slider">
+                        <div class="slider__item">
+                            <img src="img/Слой 8.jpg" alt="" class="slider__img">
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/reebok_web.jpg" alt="" class="slider__img">
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/reebok_web (1).jpg" alt="" class="slider__img">
+                        </div>
+                    </div>
+<!--                     <ul class="section-portfolio__list">
                         <li class="section-portfolio__item portfolio">
                             <img src="#" alt="Online fashion store" class="portfolio__img">
                             <a href="#" class="portfolio__link">Online fashion store - Homepage</a>
@@ -151,7 +162,7 @@
                             <img src="#" alt="Braun Landing Page" class="portfolio__img">
                             <a href="#" class="portfolio__link">Braun Landing Page - Concept</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </section>
             <!-- */section-portfolio -->
@@ -160,9 +171,9 @@
 
         </main>
         <!-- */main -->
-        <footer class="footer contacts">
+        <footer id="contacts" class="footer contacts">
             <div class="container contacts-container">
-                <h2 class="section-title">Portfolio</h2>
+                <h2 class="section-title">Contacts</h2>
                 <p class="section-text">Want to know more or just chat? You are welcome!</p>
                 <a href="#" class="btn">Send message</a>
                 <ul class="social__list">
@@ -182,6 +193,11 @@
             </div>
         </footer>
     </div>
+
+
+    <script src="libs/jquery-v3.6.0/jquery-v3.6.0.js"></script>
+    <script src="libs/slick-1.8.1/slick-1.8.1.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
 
