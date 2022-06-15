@@ -6,13 +6,15 @@
 @import "normalize";
 //общие классы
 @import "global";
-
+//header
 @import "header";
-
-@import "section-main";
-
+//секция profile
+@import "section-profile";
+//секция about
 @import "section-about";
+//секция skill
+@import "section-skill";
+//секция portfolio
+@import "section-portfolio";
 
-@import "section-skills";
-
-@import "slick-theme";
+@import "footer-contacts";

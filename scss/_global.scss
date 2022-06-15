@@ -50,6 +50,21 @@ img {
     flex: 1 1 auto;
 }
 
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    color:#fff ;
+    background-color: $color-main;
+    text-decoration: none;
+    border-radius: 30px;
+    &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    }
+    &:active {
+        transform: translate(1px,2px);
+    }
+}
+
 .section-title {
     font-size: $fs-heading;
     font-weight: $fw-bold;
