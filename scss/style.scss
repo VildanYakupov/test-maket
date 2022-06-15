@@ -1,20 +1,20 @@
 // подключение шрифтов
-@import "fonts";
+@import "_fonts.scss";
 // подключение переменных
-@import "variables";
+@import "_variables.scss";
 // подключение normalize
-@import "normalize";
+@import "_normalize.scss";
 //общие классы
-@import "global";
+@import "_global.scss";
 //header
-@import "header";
+@import "_header.scss";
 //секция profile
-@import "section-profile";
+@import "_section-profile.scss";
 //секция about
-@import "section-about";
+@import "_section-about.scss";
 //секция skill
-@import "section-skill";
+@import "_section-skill.scss";
 //секция portfolio
-@import "section-portfolio";
+@import "_section-portfolio.scss";
 
-@import "footer-contacts";
+@import "_footer-contacts.scss";
