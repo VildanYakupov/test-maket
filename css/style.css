@@ -454,6 +454,66 @@ img {
   transform: translate(1px, 2px);
 }
 
+@media (max-width: 767px) {
+  .burger {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 20px;
+  }
+
+  .burger span {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #070707;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .burger::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #070707;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .burger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #070707;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .burger.active span {
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+  }
+
+  .burger.active::before {
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .burger.active::after {
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+}
 .section-profile {
   height: 100vh;
 }
@@ -590,10 +650,20 @@ img {
   margin-bottom: 50px;
 }
 
-.slider {
+.slider__item {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 1px;
 }
+.slider__img {
+  flex: 1 0 auto;
+  border: 1px solid #070707;
+}
+.slider__btn {
+  margin-top: 40px;
+}
+
 .slider {
   position: relative;
   padding: 0 50px 0 50px;
@@ -643,27 +713,13 @@ img {
   transform: translate(5px, 5px);
 }
 
-.slick-dots li:not(:last-child) {
-  margin-right: 20px;
+.slick-disabled {
+  opacity: 0.4;
+  pointer-events: none;
 }
 
-.slick-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-}
-.slick-dots button {
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-  background-color: #828282;
-  font-size: 0;
-  border: 0;
-  padding: 0;
-}
-.slick-dots .slick-active button {
-  background-color: #070707;
+.slick-dots li:not(:last-child) {
+  margin-right: 20px;
 }
 
 .contacts {

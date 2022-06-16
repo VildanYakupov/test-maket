@@ -3,6 +3,12 @@
     &__container {
     }
 
+    &__burger {
+    }
+
+    &__burger-line {
+    }
+
     &__nav {
     }
 
@@ -31,5 +37,69 @@
         &:active {
             transform: translate(1px, 2px);
         }
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .header {
+        &__nav {}
+    }
+
+    .burger {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 20px;
+    }
+    .burger span {
+        position: absolute;
+        left: 0;
+        top: 9px;
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: $color-main;
+        transition: opacity $animation ease-in-out;
+    }
+
+    .burger::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: $color-main;
+        transition: transform $animation ease-in-out;
+    }
+
+    .burger::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: $color-main;
+        transition: transform $animation ease-in-out;
+    }
+
+    .burger.active span {
+        transition: transform $animation ease-in-out;
+        opacity: 0;
+    }
+    .burger.active::before {
+        transition: transform $animation ease-in-out;
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .burger.active::after {
+        transition: transform $animation ease-in-out;
+        transform: rotate(-45deg);
+        bottom: 9px;
     }
 }

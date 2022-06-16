@@ -246,6 +246,11 @@
     }
 }
 
+.slick-disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
 
 .slick-dots li {
     &:not(:last-child) {
@@ -253,24 +258,24 @@
     }
 }
 
-.slick-dots{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    button {
-        cursor: pointer;
-        width: 20px;
-        height: 20px;
-        background-color: $color-secondary;
-        font-size: 0;
-        border: 0;
-        padding: 0;
-    }
-    .slick-active {
-        button {
-            background-color: $color-main;
-        }
-    }
-}
+// .slick-dots{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-top: 30px;
+//     button {
+//         cursor: pointer;
+//         width: 20px;
+//         height: 20px;
+//         background-color: $color-secondary;
+//         font-size: 0;
+//         border: 0;
+//         padding: 0;
+//     }
+//     .slick-active {
+//         button {
+//             background-color: $color-main;
+//         }
+//     }
+// }
 
