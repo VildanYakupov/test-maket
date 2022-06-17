@@ -795,6 +795,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 80px;
+  padding-bottom: 75px;
 }
 .contacts__title {
   margin-bottom: 25px;
