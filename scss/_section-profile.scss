@@ -1,5 +1,4 @@
 .section-profile {
-      height: 100vh;
       &__container {
             display: flex;
             flex-direction: column;
@@ -59,5 +58,48 @@
 
       &__separator{
             margin: 0 4px;
+      }
+}
+
+@media (max-width: 767px) {
+      .section-profile {
+            &__container {
+                  display: flex;
+                  flex-direction: column;
+                  padding-top: 40px;
+                  padding-bottom: 80px;
+            }
+      
+            &__info {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+            }
+      
+            &__img {
+                  margin-right: auto;
+                  margin-left: auto;
+                  margin-top: 35px;
+                  width: 100%;
+                  height: 480px;
+            }
+      }
+
+      .profile {
+            &__name {
+                  line-height: 58px;
+            }
+      
+            &__desription {
+                  margin-top: 20px;
+            }
+      
+            &__desription-text {
+            }
+      
+            &__lang {
+                  display: none;
+                  // transform: rotate(-90deg) translate(25px, 22px)
+            }
       }
 }

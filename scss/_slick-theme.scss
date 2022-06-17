@@ -251,12 +251,29 @@
     pointer-events: none;
 }
 
+@media (max-width: 767px) {
 
-.slick-dots li {
-    &:not(:last-child) {
-        margin-right: 20px;
+    .slider {
+        padding: 0;
+    }
+
+    .slick-list {
+        overflow: hidden;
+    }
+
+    .slick-arrow {
+        display: none;
+    }
+
+    .slick-prev {
+        display: none;
+    }
+    .slick-prev {
+        display: none;
     }
 }
+
+
 
 // .slick-dots{
 //     display: flex;
@@ -279,3 +296,8 @@
 //     }
 // }
 
+// .slick-dots li {
+//     &:not(:last-child) {
+//         margin-right: 20px;
+//     }
+// }

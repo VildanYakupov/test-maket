@@ -4,6 +4,12 @@ $(document).ready(function() {
         // dots: true,
         speed: 800,
         infinite: false,
+        responsive: [{
+            breakpoint:768,
+            settings: {
+                arrows: false,
+            }
+        }]
     });
 
     $(".burger").click(function(){
