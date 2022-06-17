@@ -89,7 +89,6 @@
     }
 
     .burger.active span {
-        transition: transform $animation ease-in-out;
         opacity: 0;
     }
     .burger.active::before {
