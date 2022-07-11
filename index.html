@@ -17,7 +17,7 @@
         <!-- *header -->
         <header class="header">
             <div class="container header__container">
-                <div class="burger">
+                <div class="header__burger burger">
                     <span></span>
                 </div>
                 <nav class="header__nav">
@@ -48,6 +48,17 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="lang header__lang">
+                        <label class="lang__label">
+                            <input class="lang__radio" name="header-btn" type="radio">
+                            <span class="lang__text">RU</span>
+                        </label>
+                        <div class="lang__separator">|</div>
+                        <label class="lang__label">
+                            <input class="lang__radio" name="header-btn" type="radio" checked>
+                            <span class="lang__text">ENG</span>
+                        </label>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -65,10 +76,23 @@
                             <p class="profile__desription-text">HTML | CSS developer</p>
                             <p class="profile__desription-text">30 years old, Kazan</p>
                         </div>
-                        <div class="profile__lang lang">
+                        <div class="lang profile__lang">
+<!--                             <label class="lang__text lang__text--ru" for="lang__text--ru">RU</label>
+                            <input class="lang__radio" type="radio" name="lang" id="lang__text--ru" value="ru">
                             <a href="#" class="lang__link">RU</a>
                             <div class="lang__separator">|</div>
                             <a href="#" class="lang__link">ENG</a>
+                            <label class="lang__text lang__text--eng" for="lang__text--eng">ENG</label>
+                            <input class="lang__radio" type="radio" name="lang" id="lang__text--eng" value="eng" checked> -->
+                            <label class="lang__label">
+                                <input class="lang__radio" name="profile-lang" type="radio">
+                                <span class="lang__text">RU</span>
+                            </label>
+                            <div class="lang__separator">|</div>
+                            <label class="lang__label">
+                                <input class="lang__radio" name="profile-lang" type="radio" checked>
+                                <span class="lang__text">ENG</span>
+                            </label>
                         </div>
                     </div>
                     <img src="#" alt="Фотография Автора" class="section-profile__img">
@@ -148,15 +172,15 @@
                     <h2 class="section-title section-portfolio__title">Portfolio</h2>
                     <div class="slider">
                         <div class="slider__item">
-                            <img src="img/Слой 8.jpg" alt="" class="slider__img">
+                            <img src="img/1.jpg" alt="" class="slider__img">
                             <a class="btn slider__btn" href="#">Online fashion store - Homepage</a>
                         </div>
                         <div class="slider__item">
-                            <img src="img/reebok_web.jpg" alt="" class="slider__img">
+                            <img src="img/2.jpg" alt="" class="slider__img">
                             <a class="btn slider__btn" href="#">Reebok Store - Concept</a>
                         </div>
                         <div class="slider__item">
-                            <img src="img/reebok_web (1).jpg" alt="" class="slider__img">
+                            <img src="img/3.jpg" alt="" class="slider__img">
                             <a class="btn slider__btn" href="#">Braun Landing Page - Concept</a>
                         </div>
                     </div>

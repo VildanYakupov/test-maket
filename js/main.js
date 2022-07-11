@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".slider").slick({
+    $('.slider').slick({
         arrows: true,
         // dots: true,
         speed: 800,
@@ -12,8 +12,13 @@ $(document).ready(function() {
         }]
     });
 
-    $(".burger").click(function(){
-        $(".burger").toggleClass ("active");
+    $('.burger').click(function(){
+        $('.burger').toggleClass ('active');
+        $('.header__nav').toggleClass('open-menu');
     });
 
+    $('.header__link').click(function(){
+        $('.burger').removeClass ('active');
+        $('.header__nav').removeClass('open-menu');
+    })
 });

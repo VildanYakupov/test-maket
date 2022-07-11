@@ -1,5 +1,7 @@
 .section-profile {
+
       &__container {
+
             display: flex;
             flex-direction: column;
             padding-top: 40px;
@@ -40,33 +42,13 @@
       }
 }
 
-.lang {
-      display: flex;
-      align-items: center;
-      &__link {
-            font-size:$fs-lang;
-            color: $color-secondary;
-            transition: transform $animation ease-out;
-            &:hover {
-                  color: $color-main;
-            }
-            &:active {
-                  color: $color-main;
-                  transform: translate(1px, 1px);
-            }
-      }
-
-      &__separator{
-            margin: 0 4px;
-      }
-}
-
 @media (max-width: 767px) {
       .section-profile {
+            height: auto;
             &__container {
                   display: flex;
                   flex-direction: column;
-                  padding-top: 40px;
+                  padding-top: 65px;
                   padding-bottom: 80px;
             }
       

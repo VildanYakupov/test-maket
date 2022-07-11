@@ -1,6 +1,8 @@
 .section-about {
+    height: 100vh;
     background-color: $bg-secondary;
     &__container {
+        height: 100%;
         padding-top: 120px;
         padding-bottom: 100px;
         max-width: 485px;
@@ -26,7 +28,7 @@
     .section-about {
         &__container {
             padding-top: 80px;
-            padding-bottom: 75px;
+            padding-bottom: 80px;
         }
         }
     }

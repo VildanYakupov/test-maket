@@ -1,6 +1,8 @@
 .section-portfolio {
+    height: auto;
     background-color: $bg-secondary;
     &__container {
+        height: 100%;
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -27,6 +29,17 @@
 
     &__btn {
         margin-top: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-portfolio {
+        height: auto;
+        &__container {
+            height: 100%;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
     }
 }
 
