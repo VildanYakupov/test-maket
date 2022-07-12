@@ -1,20 +1,30 @@
-// подключение шрифтов
+//* подключение шрифтов
 @import "fonts";
-// подключение переменных
+
+//* подключение переменных
 @import "variables";
-// подключение normalize
+
+//* подключение normalize
 @import "normalize";
-//общие классы
+
+//*общие классы
 @import "global";
-//header
+
+//*header
 @import "header";
-//секция profile
+
+//*секция profile
 @import "section-profile";
-//секция about
+
+//*секция about
 @import "section-about";
-//секция skill
+
+//*секция skill
 @import "section-skill";
-//секция portfolio
+
+//*секция portfolio
 @import "section-portfolio";
 
+
 @import "footer-contacts";
+

@@ -41,9 +41,6 @@
         &:active {
             transform: translate(1px, 2px);
         }
-        &:focus {
-            outline: none;
-        }
     }
 
     &__lang {
@@ -108,7 +105,7 @@
         bottom: 120px;
         right: 0px;
         transform: rotate(90deg);
-        
+
 
         .lang__text{
             font-size: 34px;
